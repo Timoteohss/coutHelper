@@ -64,7 +64,7 @@ namespace cHe {
 		while(ch->getCh() != '\0') {
 			stream << *ch;
 			ch = ch->getProxCh();		
-	}
+		}
 
 		stream << std::flush;
 		return stream;
