@@ -2,11 +2,11 @@
 
 Uma biblioteca c++ para imprimir em qualquer lugar de uma linha, possui tamanho de janela iterativo e cores!
 
-##Utilizando
+## Utilizando
 
 Temporario, arrumar essa bagaceira aqui
 
-##Licença
+## Licença
 
 coutHelper (c) 2017 Timoteohss
 
