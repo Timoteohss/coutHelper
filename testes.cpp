@@ -21,5 +21,10 @@ int main() {
 		cout << impressora;
 	}
 
+	impressora.nova_linha();
+	impressora.setBEsq("Nova Linha");
+	cout << impressora << endl;
+
+
 	return 0;
 }
