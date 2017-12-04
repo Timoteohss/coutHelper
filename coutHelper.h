@@ -11,12 +11,24 @@
 namespace cHe {
 	enum class Frente {
 		Preto = 30,
+		Vermelho = 31,
+		Verde = 32,
+		Amarelo = 33,
+		Azul = 34,
+		Magenta = 35,
+		Ciano = 36,
 		Branco = 37,
 		Padrao = 39
 	};
 
 	enum class Fundo {
 		Preto = 40,
+		Vermelho = 41,
+		Verde = 42,
+		Amarelo = 43,
+		Azul = 44,
+		Magenta = 45,
+		Ciano = 46,
 		Branco = 47,
 		Padrao = 49
 	};
@@ -42,7 +54,7 @@ namespace cHe {
 	class cHe {
 		public:
 			cHe();
-			void nova_linha();
+			void novaLinha();
 			int altMax();
 			int larMax();
 
@@ -51,6 +63,9 @@ namespace cHe {
 
 			void setBDir(const std::string &);
 			void setBDir(const std::string &,Frente,Fundo);
+
+			void appendB(const std::string &);
+			void appendB(const std::string &, Frente, Fundo);
 			
 			void setBPonto(const std::string &,int);
 			void setBPonto(const std::string &,Frente,Fundo,int);

@@ -70,7 +70,7 @@ namespace cHe {
 		return stream;
 	}
 
-	void cHe::nova_linha() {
+	void cHe::novaLinha() {
 		std::cout << '\n';
 		resetB();
 	}
@@ -128,6 +128,30 @@ namespace cHe {
 		}
 		else {
 			//ERRO!
+		}
+	}
+
+	void cHe::appendB(const std::string & str) {
+		this->appendB(str, Frente::Padrao, Fundo::Padrao);
+	}
+	
+	void cHe::appendB(const std::string & str, Frente fcor, Fundo bcor) {
+		if (bTam + str.size() <= larMax()) {
+			bCh* ch = primeiroChar;
+			while(ch->getCh() != '\0') {
+				ch = ch->getProxCh();
+			}
+
+			for(int i = 0; i < str.size(); i++) {
+				ch->setCh(str[i], fcor, bcor);
+				ch->setProxCh(new bCh);
+				ch = ch->getProxCh();
+			}
+			ch->setCh('\0');
+			bTam = bTam + str.size();
+		}
+		else {
+			
 		}
 	}
 	
