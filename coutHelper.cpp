@@ -1,6 +1,6 @@
 // coutHelper.cpp
 // Definição da classe bCh e cHe
-// v0.1
+// v0.2
 
 #include <iostream>
 #include <sys/ioctl.h>
@@ -130,28 +130,34 @@ namespace cHe {
 			//ERRO!
 		}
 	}
-
-	void cHe::appendB(const std::string & str) {
-		this->appendB(str, Frente::Padrao, Fundo::Padrao);
-	}
 	
+	void cHe::appendB(const std::string & str) {
+
+		this->appendB(str, Frente::Padrao, Fundo::Padrao);
+	
+	}
+
 	void cHe::appendB(const std::string & str, Frente fcor, Fundo bcor) {
+
 		if (bTam + str.size() <= larMax()) {
+
 			bCh* ch = primeiroChar;
-			while(ch->getCh() != '\0') {
+			while (ch->getCh() != '\0') {
 				ch = ch->getProxCh();
 			}
 
-			for(int i = 0; i < str.size(); i++) {
+			for (int i = 0; i < str.size(); i++) {
+
 				ch->setCh(str[i], fcor, bcor);
 				ch->setProxCh(new bCh);
 				ch = ch->getProxCh();
+			
 			}
 			ch->setCh('\0');
 			bTam = bTam + str.size();
 		}
 		else {
-			
+			//Erro!
 		}
 	}
 	

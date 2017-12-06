@@ -1,6 +1,6 @@
 //coutHelper.h
 //Header para coutHelper
-//v0.1
+//v0.2
 
 #ifndef COUTHELPER_H
 #define COUTHELPER_H
