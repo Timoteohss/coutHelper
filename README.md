@@ -4,7 +4,21 @@ Uma biblioteca c++ para imprimir em qualquer lugar de uma linha, possui tamanho 
 
 ## Utilizando
 
-Temporario, arrumar essa bagaceira aqui
+O arquivo teste.cpp exemplifica a utilização da biblioteca de forma simples, algumas coisas a serem notadas a seguir:
+
+Importe as cores caso deseje utilizá-las: 
+```c++
+using cHe::Frente;
+using cHe::Fundo;
+
+```
+
+Criando uma nova impressora:
+```c++
+cHe::cHe impressora;
+```
+
+
 
 ## Licença
 
@@ -12,6 +26,6 @@ coutHelper (c) 2017 Timoteohss
 
 Protegido pela licença GNU!
 
-Esse software é **livre** como em **liberade**, modifique e distribua como bem entender!
+Esse software é **livre** como em **liberdade**, modifique e distribua como bem entender!
 
 

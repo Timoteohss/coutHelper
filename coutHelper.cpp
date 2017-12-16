@@ -65,7 +65,7 @@ namespace cHe {
 			stream << *ch;
 			ch = ch->getProxCh();		
 		}
-
+		
 		stream << std::flush;
 		return stream;
 	}
