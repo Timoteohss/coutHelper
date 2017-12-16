@@ -16,13 +16,13 @@ int main() {
 	//cout << impressora << endl;
 
 	for(int x = 0; x < (impressora.larMax() -12); x++) {
-		impressora.setBPonto("#", Frente::Preto, Fundo::Branco, 11+x);
+		impressora.setBPonto("#", Frente::Vermelho, Fundo::Branco, 11+x);
 		usleep(10000);
 		cout << impressora;
 	}
 
-	impressora.nova_linha();
-	impressora.setBEsq("Nova Linha");
+	impressora.novaLinha();
+	impressora.setBEsq("Pronto!",Frente::Vermelho,Fundo::Branco);
 	cout << impressora << endl;
 
 
