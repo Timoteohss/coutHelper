@@ -5,7 +5,7 @@ Uma biblioteca c++ para imprimir em qualquer lugar de uma linha, possui tamanho 
 ![Exemplo](https://raw.githubusercontent.com/timoteohss/coutHelper/master/exemplo.gif "Exemplo")
 ## Utilizando
 
-O arquivo teste.cpp exemplifica a utilização da biblioteca de forma simples, algumas coisas a serem notadas a seguir:
+O arquivo testes.cpp exemplifica a utilização da biblioteca de forma simples, algumas coisas a serem notadas a seguir:
 
 Importe as cores caso deseje utilizá-las: 
 ```c++
