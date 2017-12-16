@@ -2,6 +2,7 @@
 
 Uma biblioteca c++ para imprimir em qualquer lugar de uma linha, possui tamanho de janela iterativo e cores!
 
+![Exemplo](https://raw.githubusercontent.com/timoteohss/coutHelper/master/exemplo.gif "Exemplo")
 ## Utilizando
 
 O arquivo teste.cpp exemplifica a utilização da biblioteca de forma simples, algumas coisas a serem notadas a seguir:
